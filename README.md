@@ -1,7 +1,6 @@
 **RC4 — Rivest Cipher 4**
 Implementasi Stream Cipher dalam Python
 
-=============================================================================================================================================================================
 **Pengantar Singkat**
 RC4 (Rivest Cipher 4) adalah algoritma kriptografi jenis stream cipher yang dirancang oleh Ron Rivest dari RSA Security pada tahun 1987. Selama lebih dari dua dekade, RC4 menjadi salah satu algoritma enkripsi paling banyak digunakan di dunia karena kesederhanaan implementasinya dan kecepatannya dalam memproses data.
 
@@ -14,7 +13,6 @@ Adobe PDF	       Mengenkripsi file PDF yang menggunakan proteksi password
 Microsoft RDP	       Mengamankan sesi remote desktop antara komputer klien dan server
 Komunikasi GSM	Digunakan pada beberapa implementasi protokol jaringan seluler generasi awal
 
-=============================================================================================================================================================================
 **Pembangkitan Kunci (Key Generation)**
 RC4 tidak membangkitkan kunci baru, ia menggunakan kunci yang diberikan langsung oleh pengguna untuk menginisialisasi state internal melalui proses yang disebut KSA (Key Scheduling Algorithm).
 **Cara Kerja KSA**
@@ -38,7 +36,7 @@ RC4 menggunakan skema kunci simetris — kunci yang sama digunakan untuk enkrips
 •	Pengirim dan penerima harus berbagi kunci yang sama sebelum komunikasi dimulai.
 •	Distribusi kunci harus dilakukan melalui jalur yang aman (misalnya dikirim secara terpisah atau melalui protokol pertukaran kunci seperti Diffie-Hellman).
 •	Tidak ada mekanisme kunci publik/privat seperti pada RSA — keamanan sepenuhnya bergantung pada kerahasiaan kunci tersebut.
-=============================================================================================================================================================================
+
 **Proses Enkripsi**
 Enkripsi RC4 dilakukan dalam dua tahap: pembangkitan keystream menggunakan PRGA, lalu operasi XOR antara keystream dan plaintext.
 Tahap 1  PRGA (Pseudo-Random Generation Algorithm)
@@ -67,14 +65,14 @@ Plaintext  :  H     a     l     o
 Keystream  : 0x3A  0x1F  0x82  0xC3   ← dihasilkan PRGA
 XOR (^)    : 0x72  0x7E  0xEE  0xAC
 Ciphertext : 727eeeac  (dalam format hex)
-=============================================================================================================================================================================
+
 **Proses Dekripsi**
 Dekripsi RC4 identik dengan enkripsi. Tidak ada fungsi terpisah, cukup jalankan rc4() yang sama dengan kunci yang sama pada ciphertext.
 Mengapa Bisa Sama?
 Karena sifat matematis XOR yang simetris:
 Enkripsi : Plaintext  XOR Keystream = Ciphertext
 Dekripsi : Ciphertext XOR Keystream = Plaintext
-=============================================================================================================================================================================
+
 **Kelebihan & Kelemahan**
 **Kelebihan**
 Aspek	                     Penjelasan
