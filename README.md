@@ -5,11 +5,17 @@ Pengantar Singkat
 RC4 (Rivest Cipher 4) adalah algoritma kriptografi jenis stream cipher yang dirancang oleh Ron Rivest dari RSA Security pada tahun 1987. Selama lebih dari dua dekade, RC4 menjadi salah satu algoritma enkripsi paling banyak digunakan di dunia karena kesederhanaan implementasinya dan kecepatannya dalam memproses data.
 Kegunaan Utama di Dunia Nyata
 Teknologi	Keterangan
+---------------------------------------------------------------------------------------------------------------------------------------------
 SSL/TLS	Digunakan untuk mengenkripsi komunikasi HTTPS antara browser dan server web (1990–2015)
+---------------------------------------------------------------------------------------------------------------------------------------------
 WEP & WPA-TKIP	Menjadi inti enkripsi standar keamanan Wi-Fi pada router rumahan dan perkantoran
+---------------------------------------------------------------------------------------------------------------------------------------------
 Microsoft Office	Dipakai untuk enkripsi dokumen yang dilindungi password (versi sebelum Office 2007)
+---------------------------------------------------------------------------------------------------------------------------------------------
 Adobe PDF	Mengenkripsi file PDF yang menggunakan proteksi password
+---------------------------------------------------------------------------------------------------------------------------------------------
 Microsoft RDP	Mengamankan sesi remote desktop antara komputer klien dan server
+---------------------------------------------------------------------------------------------------------------------------------------------
 Komunikasi GSM	Digunakan pada beberapa implementasi protokol jaringan seluler generasi awal
 ==================================================================================
 Pembangkitan Kunci (Key Generation)
