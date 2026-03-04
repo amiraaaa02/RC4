@@ -91,18 +91,48 @@ Dekripsi : Ciphertext XOR Keystream = Plaintext
 
 **Kelebihan & Kelemahan**
 **Kelebihan**
-Aspek	                     Penjelasan
-Kecepatan	              Sangat cepat dalam enkripsi/dekripsi, cocok untuk perangkat dengan sumber daya terbatas
-Implementasi Sederhana	Hanya butuh 30 baris kode, mudah diimplementasikan di berbagai bahasa pemrograman
-Ringan	                     Tidak membutuhkan banyak memori, hanya array 256 byte untuk state internal
-Fleksibel	              Dapat mengenkripsi data dengan panjang berapa pun tanpa perlu padding
-Simetris	              Satu fungsi untuk enkripsi dan dekripsi, menyederhanakan implementasi
+
+--------------------------------------------------------------------------------------------------------------
+Aspek	                 |    Penjelasan
+
+--------------------------------------------------------------------------------------------------------------
+Kecepatan	           |   Sangat cepat dalam enkripsi/dekripsi, cocok untuk perangkat dengan sumber daya terbatas
+
+--------------------------------------------------------------------------------------------------------------
+Implementasi Sederhana    |   Hanya butuh 30 baris kode, mudah diimplementasikan di berbagai bahasa pemrograman
+
+--------------------------------------------------------------------------------------------------------------
+Ringan	                  |   Tidak membutuhkan banyak memori, hanya array 256 byte untuk state internal
+
+--------------------------------------------------------------------------------------------------------------
+Fleksibel	          |    Dapat mengenkripsi data dengan panjang berapa pun tanpa perlu padding
+
+--------------------------------------------------------------------------------------------------------------
+Simetris	          |    Satu fungsi untuk enkripsi dan dekripsi, menyederhanakan implementasi
+
+--------------------------------------------------------------------------------------------------------------
 
 **Kelemahan**
-Aspek	                     Penjelasan
-RC4 Biases	              Byte-byte awal keystream memiliki distribusi statistik yang tidak merata, membuat pola dapat dideteksi
-Rentan Serangan	       Kelemahan ini dieksploitasi dalam serangan BEAST dan CRIME yang menarget SSL/TLS
-WEP Mudah Dibobol	       Implementasi RC4 dalam WEP dapat dipecahkan dalam hitungan menit menggunakan tools seperti Aircrack-ng
-Tidak Ada Integritas Data	RC4 murni tidak memverifikasi apakah data telah dimodifikasi selama transmisi (no MAC)
-Kunci Simetris	       Distribusi kunci menjadi tantangan — jika kunci bocor, semua enkripsi gugur seketika
-Sudah Dilarang (RFC 7465)	Sejak 2015 resmi dilarang digunakan dalam TLS/SSL oleh standar internasional
+
+--------------------------------------------------------------------------------------------------------------
+Aspek	                 |    Penjelasan
+
+--------------------------------------------------------------------------------------------------------------
+RC4 Biases	           |   Byte-byte awal keystream memiliki distribusi statistik yang tidak merata, membuat pola dapat dideteksi
+
+--------------------------------------------------------------------------------------------------------------
+Rentan Serangan	     |  Kelemahan ini dieksploitasi dalam serangan BEAST dan CRIME yang menarget SSL/TLS
+
+--------------------------------------------------------------------------------------------------------------
+WEP Mudah Dibobol	     |  Implementasi RC4 dalam WEP dapat dipecahkan dalam hitungan menit menggunakan tools 
+
+--------------------------------------------------------------------------------------------------------------
+Tidak Ada Integritas Data  |  RC4 murni tidak memverifikasi apakah data telah dimodifikasi selama transmisi (no MAC)
+
+--------------------------------------------------------------------------------------------------------------
+Kunci Simetris	     |  Distribusi kunci menjadi tantangan — jika kunci bocor, semua enkripsi gugur seketika
+
+--------------------------------------------------------------------------------------------------------------
+Sudah Dilarang (RFC 7465)   |  Sejak 2015 resmi dilarang digunakan dalam TLS/SSL oleh standar internasional
+
+--------------------------------------------------------------------------------------------------------------
